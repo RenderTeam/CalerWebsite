@@ -4,5 +4,17 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Your project name' });
+  res.render('index', { title: 'Caler' });
+};
+
+exports.contacto = function(req, res){
+  res.render('contacto', { title: 'Caler' });
+};
+
+exports.caler = function(req, res){
+  res.render('caler', { title: 'Caler' });
+};
+
+exports.servicios = function(req, res){
+  res.render('servicios', { title: 'Caler' });
 };

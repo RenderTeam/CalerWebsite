@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  br
+  .container
+    .hero-unit
+      
+    .custom-narrow
+      form.well.span10.white
+        .row
+          .span3
+            label Nombre:
+            input(type="text", class="span3", placeholder="Your First Name")
+            label Correo electrónico: 
+            input(type="text", class="span3", placeholder="Your Last Name")
+            label Asunto: 
+              select.span3(id='asunto', name='asunto',)
+                option(value='', selected='')  Escoge uno:
+                option('cotización')  Cotización
+                option('informe') Informes
+                option('sugerencias') Sugerencia
+          .span7
+            label Mensaje
+            textarea(name="message", id="message", class="input-xlarge span7", rows="10")
+          button(type="submit", class="btn btn-primary pull-right") Send
+
+block custom-scripts
+  //for development. We use local scripts
+  script(src='javascripts/angular/angular.min.js')
+  script(src='javascripts/jquery/jquery.min.js')
+  //- for production. We use cdn minified scripts.
+      tab back twice to add them to the page and comment 
+      or delete the local links
+      script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js')
+      script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')

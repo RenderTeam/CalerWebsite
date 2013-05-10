@@ -1,0 +1,56 @@
+#main_area
+  .row
+    .span12#slider
+      .row
+        .span8#carousel-bounding-box
+          .carousel.slide#myCarousel
+            .carousel-inner
+              .active.item(data-slide-number='0')
+                img(src='images/calerLogo.png')
+              .item(data-slide-number='1')
+                img(src='http://placehold.it/770x300&text=two')
+              .item(data-slide-number='2')
+                img(src='http://placehold.it/770x300&text=three')
+              .item(data-slide-number='3')
+                img(src='http://placehold.it/770x300&text=four')
+            a.carousel-control.left(href='#myCarousel', data-slide='prev') ‹
+            a.carousel-control.right(href='#myCarousel', data-slide='next') ›
+        .span4#carousel-text
+        #slide-content(style='display: none;')
+          #slide-content-0
+            h2 Consultoría en acreditación de laboratorios
+            span Su solución en sistemas de gestión
+          #slide-content-1
+            h2 Slider Two
+            p Lorem Ipsum Dolor
+            p.sub-text
+              | October 24 2012 -
+              a(href='#') Read more
+          #slide-content-2
+            h2 Slider Three
+            p Lorem Ipsum Dolor
+            p.sub-text
+              | October 24 2012 -
+              a(href='#') Read more
+          #slide-content-3
+            h2 Slider Four
+            p Lorem Ipsum Dolor
+            p.sub-text
+              | October 24 2012 -
+              a(href='#') Read more
+  #slider-thumbs.row.hidden-phone
+    .span12
+         Bottom 
+      ul.thumbnails
+        li.span3
+          a#carousel-selector-0.thumbnail
+            img(src='images/calerLogoPreview.png')
+        li.span3
+          a#carousel-selector-1.thumbnail
+            img(src='http://placehold.it/255x130&text=two')
+        li.span3
+          a#carousel-selector-2.thumbnail
+            img(src='http://placehold.it/255x130&text=three')
+        li.span3
+          a#carousel-selector-3.thumbnail
+            img(src='http://placehold.it/255x130&text=four')

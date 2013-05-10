@@ -2,13 +2,62 @@ doctype 5
 html
   head
     title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+
+    <!-- CSS -->
     block stylesheets
-      link(rel='stylesheet', href='/stylesheets/bootstrap/bootstrap.css')
-      link(rel='stylesheet', href='/stylesheets/bootstrap/responsive.css')    
+    link(href='/stylesheets/bootstrap/bootstrap.css', rel='stylesheet')
+    link(href='/stylesheets/bootstrap/responsive.css', rel='stylesheet')
+    link(href='http://fonts.googleapis.com/css?family=Oswald',rel='stylesheet', type='text/css')
+    link(href='/stylesheets/own/index.css', rel='stylesheet')
+
+
+    
     block custom-stylesheets
   body
+
+    div.navbar.navbar.navbar-fixed-top
+      div.navbar-inner
+        div.container-fluid
+          button(class='btn btn-navbar', data-target='.nav-collapse', data-toggle='collapse', type='button')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand
+            img(src='/images/calerNav.png', alt="Logo",width=100)
+          div.nav-collapse.collapse 
+            ul.nav#mainSiteNav
+              li.active
+                a.activeA(href='/') Inicio
+              li
+                a.activeA(href='/caler') ¿Quiénes somos?
+              li
+                a.activeA(href='/contacto') Contacto
+              li
+                a.activeA(href='/servicios') Servicios
+
     block content
 
+    footer.footer
+      div.container.text-center
+        hr
+        p.muted Creado por el grupo de desarrollo Tap-Tap:
+        ul.nav.nav-list
+          li: a(href='https://www.twitter.com/Alevardi') @Alevardi
+          li: a(href='https://www.twitter.com/DanBlack13') @DanBlack13
+
+
+
     block scripts
-    
+      script(src='javascripts/jquery/jquery.min.js')
+      script(src='javascripts/bootstrap/bootstrap-carousel.js')
+      script(src='javascripts/bootstrap/bootstrap-collapse.js')
+      script(src='javascripts/bootstrap/bootstrap-transition.js')
+      script(src='javascripts/own/indexGallery.js')        
+      script(src='javascripts/own/indexFunctions.js')
+
+        
     block custom-scripts

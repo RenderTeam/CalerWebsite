@@ -1,8 +1,20 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  #full-main
+    .container
+      include indexGallery
+  br
+  .container#prueba
+    .span12
+      div.span5
+        img(src='http://placehold.it/420x130&text=two')
+        h2 Cursos
+        p.lead  Informacion de los cursos
+      div.span5.pull-right
+        img(src='http://placehold.it/420x130&text=tree')
+        h2 Acreditaciones
+        p.lead Información de las acreditaciones
 
 block custom-scripts
   //for development. We use local scripts
