@@ -18,3 +18,7 @@ exports.caler = function(req, res){
 exports.servicios = function(req, res){
   res.render('servicios', { title: 'Caler' });
 };
+
+exports.calendario = function(req, res){
+  res.render('calendario', { title: 'Caler' });
+};
