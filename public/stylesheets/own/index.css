@@ -1,5 +1,4 @@
 body {
-  padding-top: 40px;
   font-family: 'Oswald', sans-serif;
 }
 .navbar-fixed-top ul li {
@@ -24,4 +23,23 @@ body {
 }
 #carousel-text span {
   font-size: 20px;
+}
+/*SERVICIOS*/
+.section-header .span3 {
+  color: #2C77B8;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 5px;
+}
+.section-header .span4 {
+  color: #2C77B8;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 5px;
+}
+.service-titles .span4 {
+  color: #2C77B8;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 5px;
 }
