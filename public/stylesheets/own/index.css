@@ -1,5 +1,6 @@
 body {
   font-family: 'Oswald', sans-serif;
+  color: #2C77B8;
 }
 .navbar-fixed-top ul li {
   font-size: 17px;
@@ -26,13 +27,11 @@ body {
 }
 /*SERVICIOS*/
 .section-header .span3 {
-  color: #2C77B8;
   margin-right: 0;
   margin-left: 0;
   padding: 5px;
 }
 .section-header .span4 {
-  color: #2C77B8;
   margin-right: 0;
   margin-left: 0;
   padding: 5px;
@@ -56,22 +55,30 @@ body {
   padding: 10px 0;
 }
 .service-element-container ul {
-  list-style: none;
-  margin: 0;
+  border-radius: 0 0 5px 5px;
   -moz-border-radius: 0 0 5px 5px;
   -webkit-border-radius: 0 0 5px 5px;
-  border-radius: 0 0 5px 5px;
+  list-style: none;
+  margin: 0;
+  text-align: justify;
 }
 .service-element-container ul li.service-feature {
-  padding: 15px 10px;
+  padding: 15px 15px;
 }
 .service-element-container:hover {
   -moz-box-shadow: 0 0 6px 2px #FFA500;
   -webkit-box-shadow: 0 0 6px 2px #FFA500;
   box-shadow: 0 0 6px 2px #FFA500;
 }
+.service-text-container h1 b {
+  color: #FF8C35;
+}
+.service-text-container article {
+  font-size: 1.3em;
+  margin-right: 30px;
+  text-align: justify;
+}
 .service-titles .span4 {
-  color: #2C77B8;
   margin-right: 0;
   margin-left: 0;
   padding: 5px;
