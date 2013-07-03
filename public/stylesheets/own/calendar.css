@@ -4,6 +4,26 @@
 .centered-text {
   text-align: center;
 }
+.n-card {
+  clear: both;
+  margin-top: 1.2em;
+}
+.white {
+  background-color: white;
+}
+.white .title {
+  color: #FF8C35;
+}
+.white .vertical-centered {
+  padding-top: 1em;
+}
+.white .row-fluid {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#demo {
+  position: fixed;
+}
 #main-content {
   padding-top: 3%;
   padding-bottom: 3%;
