@@ -13,16 +13,17 @@ block content
     .span12.row-fluid
       h1.centered-text.page-title Calendario de actividades
 
-      #demo.yui3-skin-sam.yui3-g  
-        .yui3-u
-          #mycalendar
-
-
-
-
-
-
-
-
+      #demo.yui3-skin-sam.yui3-g
+        #leftcolumn.yui3-u
+            #mycalendar
+          #rightcolumn.yui3-u
+            #links(style='padding-left: 20px;')
+              button#togglePrevMonth.yui3-button Toggle Previous Month's Dates
+              br
+              button#toggleNextMonth.yui3-button Toggle Next Month's Dates
+              br
+              selected
+                | date:
+                span#selecteddate
 
 
