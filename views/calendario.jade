@@ -4,26 +4,35 @@ block custom-scripts
   script(src='http://yui.yahooapis.com/3.7.3/build/yui/yui-min.js')
   script(src='javascripts/own/calendar.js')
 block custom-stylesheets
-  link(href='stylesheets/own/calendar.css')
-  link(href='stylesheets/own/shame.css')
+  link(href='/stylesheets/own/calendar.css', rel='stylesheet')
+  link(href='/stylesheets/own/shame.css', rel='stylesheet')
 
 block content
-
-  .container
-    .span12.row-fluid
-      h1.centered-text.page-title Calendario de actividades
-
-      #demo.yui3-skin-sam.yui3-g
-        #leftcolumn.yui3-u
-            #mycalendar
-          #rightcolumn.yui3-u
-            #links(style='padding-left: 20px;')
-              button#togglePrevMonth.yui3-button Toggle Previous Month's Dates
-              br
-              button#toggleNextMonth.yui3-button Toggle Next Month's Dates
-              br
+  #main-content
+    .container     
+      .container.centered-text
+        .span12.service-titles
+          .span4
+            hr
+          .span4
+            h3
+              img(src='/images/iconoCaler.png', alt="Logo").pull-left
+              span Capacitaciones
+              img(src='/images/iconoCaler.png', alt="Logo").pull-right
+          .span4
+            hr
+      .span12.row-fluid
+        .span8
+          h2 lol
+        .span4
+          #demo.yui3-skin-sam.yui3-g
+            .yui3-u
+              #mycalendar
               selected
                 | date:
                 span#selecteddate
+
+     
+          
 
 

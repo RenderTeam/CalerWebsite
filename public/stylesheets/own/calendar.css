@@ -1,0 +1,11 @@
+.blue-caler {
+  color: #2C77B8;
+}
+.centered-text {
+  text-align: center;
+}
+#main-content {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 100%;
+}
