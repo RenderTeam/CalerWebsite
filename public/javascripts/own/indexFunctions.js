@@ -24,6 +24,7 @@ function start(){
 			$('#mainSiteNav').find('li:last').addClass('active');
 		break;
 	}
+	
 }
 
 $(document).on('ready', start);

@@ -5,20 +5,20 @@ block content
   .container.text-center
     .span12.service-titles
       .span4
-        .hero-unit 
+        .hero-unit.course
           h2 Cursos
       .span4
-        .hero-unit
+        .hero-unit.advice
           h2 Asesorías
       .span4
-        .hero-unit
+        .hero-unit.audit
           h2 Auditorías
 
     .span12.service-titles
       .span4
         hr
       .span4
-        h3
+        h2
           img(src='/images/iconoCaler.png', alt="Logo").pull-left
           span Servicios
           img(src='/images/iconoCaler.png', alt="Logo").pull-right
@@ -42,7 +42,7 @@ block content
       .span4
         hr
       .span4
-        h3
+        h2
           img(src='/images/iconoCaler.png', alt="Logo").pull-left
           span Cursos
           img(src='/images/iconoCaler.png', alt="Logo").pull-right
@@ -63,7 +63,7 @@ block content
       .span4
         hr
       .span4
-        h3
+        h2
           img(src='/images/iconoCaler.png', alt="Logo").pull-left
           span Asesorías
           img(src='/images/iconoCaler.png', alt="Logo").pull-right
@@ -72,16 +72,35 @@ block content
 
     include service-description
 
+    .span5.pull-right.service-element-container
+      .service-element
+          h2 ISO 9001:2008
+        ul
+          li.service-feature Esta norma especifica los requerimientos para un sistema de gestión de calidad dentro de una organización.
+          li.service-feature Dicho sistema de gestión debe demostrar su capacidad y consistencia para proveer prodctos que interactúan directamente con el cliente cumpliendo requerimientos estatutarios y de regulación. 
+          li.service-feature Por otro lado propone elevar la satisfacción del cliente a través de la implementación efectiva del mismo, incluye procesos para el mejoramiento contínuo de éste y también asegurar la conformidad del cliente bajo requerimientos estatutarios y de regulación.
+          li.service-feature
+            a.btn.btn-primary.btn-block.btn-plan-select(href='#') Ver más
+
     .span12.service-titles
       .span4
         hr
       .span4
-        h3
+        h2
           img(src='/images/iconoCaler.png', alt="Logo").pull-left
           span Auditorías
           img(src='/images/iconoCaler.png', alt="Logo").pull-right
       .span4
         hr
+
+    .span12.text-left.service-text-container
+      br
+      article En CALER
+        sup ©
+        |  ofrecemos auditorías de diagnóstico para laboratorios que inician con la implantación de su sistema de gestión de la calidad.
+      br
+      article Auditorías internas (realizadas por externos) para laboratorios que ya cuentan con un sistema de gestión de la calidad implantado e incluso ya acreditado o certificado.
+      br
 
     include service-description
 
