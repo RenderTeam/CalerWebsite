@@ -22,3 +22,7 @@ exports.servicios = function(req, res){
 exports.capacitaciones = function(req, res){
   res.render('capacitaciones', { title: 'Caler' });
 };
+
+exports.calendario = function(req, res){
+  res.render('calendario', { title: 'Caler' });
+};
