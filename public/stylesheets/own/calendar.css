@@ -8,18 +8,17 @@
   clear: both;
   margin-top: 1.2em;
 }
+.left-padded {
+  margin-left: 2em;
+}
 .white {
   background-color: white;
 }
 .white .title {
   color: #FF8C35;
 }
-.white .vertical-centered {
+.vertical-centered {
   padding-top: 1em;
-}
-.white .row-fluid {
-  margin-left: 0px;
-  margin-right: 0px;
 }
 #demo {
   position: fixed;
