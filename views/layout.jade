@@ -14,7 +14,8 @@ html(lang='es')
     link(href='/stylesheets/bootstrap/responsive.css', rel='stylesheet')
     link(href='http://fonts.googleapis.com/css?family=Oswald',rel='stylesheet', type='text/css')
     link(href='/stylesheets/own/index.css', rel='stylesheet')
-    
+    link(rel="icon", type="image/png" ,href="/images/iconoCaler.png")
+
     block custom-stylesheets
   body
     div.navbar.navbar.navbar-fixed-top
@@ -35,6 +36,15 @@ html(lang='es')
                 a.activeA(href='/servicios') Servicios
               li
                 a.activeA(href='/capacitaciones') Capacitaciones
+          .pull-right.slogan-container
+            sup 
+              sup ┌
+            |SU SOLUCIÓN EN
+            br
+            | &nbsp;&nbsp;SISTEMAS DE GESTIÓN
+            sub
+              sub ┘
+            
     hr
 
     block content

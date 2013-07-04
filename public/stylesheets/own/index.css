@@ -2,15 +2,11 @@ body {
   font-family: 'Oswald', sans-serif;
   color: #2C77B8;
 }
-.navbar-fixed-top ul li {
-  font-size: 17px;
+#carousel-text {
+  border-top: 4px solid orange;
 }
-.navbar-fixed-top ul .active {
-  font-size: 19px;
-  border-bottom: 4px solid orange;
-}
-.navbar-fixed-top ul .active .activeA {
-  color: #3686B9;
+#carousel-text span {
+  font-size: 20px;
 }
 .top-padded {
   margin-top: 4em;
@@ -22,11 +18,18 @@ body {
   width: 100%;
   border-bottom: 3px solid orange;
 }
-#carousel-text {
-  border-top: 4px solid orange;
+.navbar-fixed-top ul .active {
+  font-size: 19px;
+  border-bottom: 4px solid orange;
 }
-#carousel-text span {
-  font-size: 20px;
+.navbar-fixed-top ul .active .activeA {
+  color: #3686B9;
+}
+.navbar-fixed-top ul li {
+  font-size: 17px;
+}
+.slogan-container {
+  color: #116CBB;
 }
 /*SERVICIOS*/
 .section-header .span3 {
@@ -43,7 +46,7 @@ body {
   background-color: #f3f3f3;
   border-radius: 5px;
   box-shadow: 0 0 6px 2px #8BC1E3;
-  margin: 10px 0;
+  margin: 20px 0;
   padding-top: 0;
   text-align: center;
   -moz-box-shadow: 0 0 6px 2px #8BC1E3;
@@ -85,4 +88,26 @@ body {
   margin-right: 0;
   margin-left: 0;
   padding: 5px;
+}
+.service-titles .span4 .hero-unit {
+  border-radius: 0 0 10px 10px;
+}
+.service-titles .span4 .hero-unit:hover {
+  background-color: #FF8C35;
+  color: #ffffff;
+}
+.service-titles .span4 .course:hover {
+  background-image: url('../../images/feather.png');
+  background-size: 65%;
+}
+.service-titles .span4 .advice:hover {
+  background-image: url('../../images/question.png');
+  background-size: 60% 80%;
+}
+.service-titles .span4 .audit:hover {
+  background-image: url('../../images/good.png');
+  background-size: 58% 85%;
+}
+.service-titles h2 span {
+  color: #FF8C35;
 }
