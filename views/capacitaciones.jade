@@ -1,11 +1,11 @@
 extends layout
 
 block custom-scripts
-  script(src='http://yui.yahooapis.com/3.7.3/build/yui/yui-min.js')
+  script(src='http://yui.yahooapis.com/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js')
+  script(src='http://yui.yahooapis.com/2.9.0/build/calendar/calendar-min.js')
   script(src='javascripts/own/calendar.js')
-  //script(src='javascripts/yui/yui2.js')
 block custom-stylesheets
-  link(href='/stylesheets/own/calendar.css', rel='stylesheet')
+  link(href='/stylesheets/own/customCalendar.css', rel='stylesheet')
   link(href='/stylesheets/own/shame.css', rel='stylesheet')
 
 block content
@@ -40,10 +40,9 @@ block content
                     .span6.vertical-centered
                       a.btn.btn-info.btn-primary(href='#') Leer más...
           // The calendar MUST be here, so its position will be binded to the first element on left column.            
-          .span4
-            #demo.yui3-skin-sam.yui3-g
-              .yui3-u
-                #mycalendar
+          .span4.yui-skin-sam
+            .span12.the-calendar
+              #myCalendar
         .span12.row-fluid
           .span8.well
             .span12.row-fluid

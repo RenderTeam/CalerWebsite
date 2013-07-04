@@ -1,4 +1,7 @@
-YUI().use('calendar', 'datatype-date', 'cssbutton',  function(Y) {             
+var calendar = new YAHOO.widget.Calendar("myCalendar");
+calendar.render();
+
+/**YUI().use('calendar', 'datatype-date', 'cssbutton',  function(Y) {             
     var calendar = new Y.Calendar({
       contentBox: "#mycalendar",
       width:'340px',
@@ -23,4 +26,4 @@ YUI().use('calendar', 'datatype-date', 'cssbutton',  function(Y) {
     });
 
 });
-
+*/
