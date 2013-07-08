@@ -24,7 +24,18 @@ function start(){
 			$('#mainSiteNav').find('li:last').addClass('active');
 		break;
 	}
-	
+
+	$('.course').on('click',scrollSmooth);
+  $('.advice').on('click',scrollSmooth);
+  $('.audit').on('click',scrollSmooth);
+}
+
+function scrollSmooth(){
+  var id = $(this).parent().data('anchor-id');
+	$('html, body').animate({
+        scrollTop: $(id).offset().top
+    }, 800);
+    return false;
 }
 
 $(document).on('ready', start);

@@ -2,6 +2,11 @@ body {
   font-family: 'Oswald', sans-serif;
   color: #2C77B8;
 }
+.breaker {
+  clear: both;
+  height: 47px;
+  opacity: 0;
+}
 #carousel-text {
   border-top: 4px solid orange;
 }
@@ -29,7 +34,7 @@ body {
   font-size: 17px;
 }
 .slogan-container {
-  color: #116CBB;
+  color: #6D2F02;
 }
 /*SERVICIOS*/
 .section-header .span3 {
