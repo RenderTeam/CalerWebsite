@@ -19,16 +19,14 @@ body {
 #carousel-text span {
   font-size: 20px;
 }
-.top-padded {
-  margin-top: 4em;
-}
 footer {
-  background-color: #8d410b;
+  background-color: #734220;
   color: #fff;
   padding: 20px;
 }
 footer .header {
-  color: #fff;
+  color: orange;
+  font-size: 1em;
 }
 #full-main {
   background-color: #EEEEEE;
@@ -51,6 +49,38 @@ footer .header {
   color: #6D2F02;
 }
 /*SERVICIOS*/
+.back-to-top {
+  margin-left: 0;
+  margin-top: 50px;
+}
+.back-to-top .span2 {
+  margin: 0;
+}
+.back-to-top .span2 img {
+  margin: auto;
+  float: none;
+  transition: transform 2s;
+  -webkit-transition: transform 2s;
+}
+.back-to-top .span2 img:hover {
+  color: orange;
+  cursor: pointer;
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  /* IE 9 */
+
+  -webkit-transform: rotate(360deg);
+}
+.fixedMenu {
+  top: -70px;
+  position: fixed;
+  z-index: 999;
+}
+.fixedMenu .hero-unit {
+  background-color: #FF8C35;
+  color: #ffffff;
+  cursor: pointer;
+}
 .section-header .span3 {
   margin-right: 0;
   margin-left: 0;
@@ -110,6 +140,7 @@ footer .header {
 }
 .service-titles .span4 .hero-unit {
   border-radius: 0 0 10px 10px;
+  height: 1px;
 }
 .service-titles .span4 .hero-unit:hover {
   background-color: #FF8C35;
@@ -130,4 +161,7 @@ footer .header {
 }
 .service-titles h2 span {
   color: #FF8C35;
+}
+.service-menu .span4 {
+  padding-top: 0;
 }
