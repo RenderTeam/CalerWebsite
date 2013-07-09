@@ -39,26 +39,18 @@ html(lang='es')
               li
                 a.activeA(href='/caler') ¿Quiénes somos?
               li
-                a.activeA(href='/contacto') Contacto
-              li
                 a.activeA(href='/servicios') Servicios
               li
                 a.activeA(href='/capacitaciones') Capacitaciones
+              li
+                a.activeA(href='/contacto') Contacto
           
             
     hr
 
     block content
 
-    footer.footer
-      div.container.text-center
-        hr
-        p.muted Creado por el grupo de desarrollo Render:
-        ul.nav.nav-list
-          li: a(href='https://www.twitter.com/Alevardi') @Alevardi
-          li: a(href='https://www.twitter.com/DanBlack13') @DanBlack13
-
-
+    include footer
 
     block scripts
       script(src='javascripts/jquery/jquery.min.js')

@@ -10,15 +10,18 @@ block content
         .row
           .span3
             label Nombre:
-            input(type="text", class="span3", placeholder="Your First Name")
-            label Correo electrónico: 
-            input(type="text", class="span3", placeholder="Your Last Name")
+            input(type="text", class="span3", placeholder="Nombre", required='required')
+            label Correo electrónico:
+            input(type="text", class="span3", placeholder="correo@correo.com", required='required')
             label Asunto: 
-              select.span3(id='asunto', name='asunto',)
+              select.span3(id='asunto', name='asunto',required='required')
                 option(value='', selected='')  Escoge uno:
                 option('cotización')  Cotización
                 option('informe') Informes
                 option('sugerencias') Sugerencia
+            label Curso:
+            input(type="text", class="span3", placeholder="Nombre del curso a solicitar información")
+
           .span7
             label Mensaje
             textarea(name="message", id="message", class="input-xlarge span7", rows="10")

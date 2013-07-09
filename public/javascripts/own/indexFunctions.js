@@ -13,15 +13,15 @@ function start(){
 		break;
 		case '/contacto':
 			$('#mainSiteNav').find('li').removeClass('active');
-			$('#mainSiteNav').find('li:last').prev().prev().addClass('active');
+			$('#mainSiteNav').find('li:last').addClass('active');
 		break;
 		case '/servicios':
 			$('#mainSiteNav').find('li').removeClass('active');
-			$('#mainSiteNav').find('li:last').prev().addClass('active');
+			$('#mainSiteNav').find('li:last').prev().prev().addClass('active');
 		break;
 		case '/capacitaciones':
 			$('#mainSiteNav').find('li').removeClass('active');
-			$('#mainSiteNav').find('li:last').addClass('active');
+			$('#mainSiteNav').find('li:last').prev().addClass('active');
 		break;
 	}
 

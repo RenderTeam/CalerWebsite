@@ -1,3 +1,9 @@
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
 body {
   font-family: 'Oswald', sans-serif;
   color: #2C77B8;
@@ -15,6 +21,14 @@ body {
 }
 .top-padded {
   margin-top: 4em;
+}
+footer {
+  background-color: #8d410b;
+  color: #fff;
+  padding: 20px;
+}
+footer .header {
+  color: #fff;
 }
 #full-main {
   background-color: #EEEEEE;
@@ -100,6 +114,7 @@ body {
 .service-titles .span4 .hero-unit:hover {
   background-color: #FF8C35;
   color: #ffffff;
+  cursor: pointer;
 }
 .service-titles .span4 .course:hover {
   background-image: url('../../images/feather.png');
