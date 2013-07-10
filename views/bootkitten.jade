@@ -19,57 +19,20 @@ head
        media='screen')
   link(rel='stylesheet', href='stylesheets/cool-kitten/style.css',
        media='screen')
+  block custom-stylesheets
   <!--[if IE]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-
-
 body
-
-  .menu
-    .container.clearfix
-      .grid_3#logo
-        img(src='images/calerNav.png')
-      .grid_9.omega#nav
-        ul.navigation
-          li(data-slide='1') #{data_slide_1}
-          li(data-slide='2') #{data_slide_2}
-          li(data-slide='3') #{data_slide_3}
-          li(data-slide='4') #{data_slide_4}
-  .slide#slide1(data-slide='1', data-stellar-background-ratio='0.5')
-    .container.clearfix
-      .content.grid_7
-        h1 #{data_slide_1}
-        h2 #{firstPunchline}
-        p  #{firstDescription}
-        p  #{firstExtendedDescription}
-        p
-          a(href='https://twitter.com/Jalxob', target='_blank')
-            img(src='images/twitter.png')
-          a(href='http://dribbble.com/jalxob', target='_blank')
-            img(src='images/dribbble.png')
-  .slide#slide2(data-slide='2', data-stellar-background-ratio='0.5')
-    .container.clearfix
-      .grid_12#content
-        h1 #{data_slide_2}
-        h2 #{secondPunchline}
-  .slide#slide3(data-slide='3', data-stellar-background-ratio='0.5')
-    .container.clearfix
-      .content#grid_12
-        h1 #{data_slide_3}
-        h2 #{thirdPunchline}
-
-        .grid_12#test 
-          &nbsp; 12
-  .slide#slide3(data-slide='3', data-stellar-background-ratio='0.5')
-    .container.clearfix
-      .content#grid_12
-        h1 #{data_slide_3}
-        h2 #{thirdPunchline}
-
-        .grid_12#test 
-          &nbsp; 12
-  script(src='')
+  block content
+    
+  
+  script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")
+  script(src="javascripts/cool-kitten/jquery.stellar.min.js")
+  script(src='javascripts/cool-kitten/waypoints.min.js')
+  script(src="javascripts/cool-kitten/jquery.easing.1.3.js")
+  script(src="javascripts/cool-kitten/scripts.js")
+  block custom-scripts
 
 
 

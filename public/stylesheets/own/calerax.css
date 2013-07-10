@@ -1,0 +1,32 @@
+body {
+  min-width: 200px;
+}
+.clearer {
+  clear: both;
+}
+.left-padded {
+  margin-left: 15px;
+}
+.top-padded {
+  padding-top: 10px;
+}
+#caler {
+  text-align: center;
+  margin: 5% 0;
+  width: 30%;
+}
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  #caler {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* Mobile */
+@media screen and (max-width: 480px) {
+  #caler {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
