@@ -7,10 +7,9 @@ block custom-stylesheets
 block content
   .menu
     .container.clearfix
-      .grid_4#caler
-        img(src='images/calerNav.png')
-       
-      .grid_6#nav
+      .grid_6#caler
+        img(src='images/calerNav.png')       
+      .grid_6.omega#nav
         ul.navigation
           li(data-slide='1') #{data_slide_1}
           li(data-slide='2') #{data_slide_2}
@@ -31,11 +30,6 @@ block content
         h2 #{firstPunchline}
         p  #{firstDescription}
         p  #{firstExtendedDescription}
-        p
-          a(href='https://twitter.com/Jalxob', target='_blank')
-            img(src='images/twitter.png')
-          a(href='http://dribbble.com/jalxob', target='_blank')
-            img(src='images/dribbble.png')
   .slide#slide2(data-slide='2', data-stellar-background-ratio='0.5')
     .container.clearfix
       .grid_12#content
