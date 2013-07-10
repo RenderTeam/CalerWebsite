@@ -39,6 +39,10 @@ app.get('/calendario', routes.calendario);
 app.get('/contacto', routes.contacto);
 app.get('/servicios', routes.servicios);
 app.get('/users', user.list);
+app.get('/asesorias/ISO17025', routes.ISO17025);
+app.get('/asesorias/ISO15189', routes.ISO15189);
+app.get('/asesorias/ISO9001', routes.ISO9001);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

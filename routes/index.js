@@ -46,3 +46,19 @@ exports.capacitaciones = function(req, res){
 exports.calendario = function(req, res){
   res.render('calendario', { title: 'Caler' });
 };
+
+exports.calendario = function(req, res){
+  res.render('calendario', { title: 'Caler' });
+};
+
+exports.ISO17025 = function(req, res){
+  res.render('asesorias/ISO17025', {title: 'Caler'});
+};
+
+exports.ISO15189 = function(req, res){
+  res.render('asesorias/ISO15189', {title: 'Caler'});
+};
+
+exports.ISO9001 = function(req, res){
+  res.render('asesorias/ISO9001', {title: 'Caler'});
+};
