@@ -11,8 +11,8 @@ html(lang='es')
     block stylesheets
     link(href='/stylesheets/bootstrap/bootstrap.css', rel='stylesheet')
     link(href='/stylesheets/bootstrap/responsive.css', rel='stylesheet')
-    link(href='http://fonts.googleapis.com/css?family=Oswald',rel='stylesheet',
-         type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Oswald',rel='stylesheet', 
+      type='text/css')
     link(href='/stylesheets/own/index.css', rel='stylesheet')
     link(rel="icon", type="image/png" ,href="/images/iconoCaler.png")
 
@@ -21,8 +21,8 @@ html(lang='es')
     div.navbar.navbar.navbar-fixed-top
       div.navbar-inner
         div.container-fluid
-          button(class='btn btn-navbar', data-target='.nav-collapse',
-                 data-toggle='collapse', type='button')
+          button(class='btn btn-navbar', data-target='.nav-collapse', 
+            data-toggle='collapse', type='button')
           a.brand
             img(src='/images/calerNav.png', alt="Logo",width=100)
           .pull-right.slogan-container
@@ -40,26 +40,17 @@ html(lang='es')
               li
                 a.activeA(href='/caler') ¿Quiénes somos?
               li
-                a.activeA(href='/contacto') Contacto
-              li
                 a.activeA(href='/servicios') Servicios
               li
                 a.activeA(href='/capacitaciones') Capacitaciones
-          
-            
-    hr
+              li
+                a.activeA(href='/contacto') Contacto
+              
+    hr#layoutLine.hidden-phone
 
     block content
 
-    footer.footer
-      div.container.text-center
-        hr
-        p.muted Creado por el grupo de desarrollo Render:
-        ul.nav.nav-list
-          li: a(href='https://www.twitter.com/Alevardi') @Alevardi
-          li: a(href='https://www.twitter.com/DanBlack13') @DanBlack13
-
-
+    include footer
 
     block scripts
       script(src='javascripts/jquery/jquery.min.js')

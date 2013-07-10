@@ -10,19 +10,27 @@ block content
         .row
           .span3
             label Nombre:
-            input(type="text", class="span3", placeholder="Your First Name")
-            label Correo electrónico: 
-            input(type="text", class="span3", placeholder="Your Last Name")
+            input(type="text", class="span3", placeholder="Nombre", required='required')
+            label Correo electrónico:
+            input(type="text", class="span3", placeholder="correo@correo.com", required='required')
             label Asunto: 
-              select.span3(id='asunto', name='asunto',)
+              select.span3(id='asunto', name='asunto',required='required')
                 option(value='', selected='')  Escoge uno:
                 option('cotización')  Cotización
                 option('informe') Informes
                 option('sugerencias') Sugerencia
+            label Curso:
+            input(type="text", class="span3", placeholder="Nombre del curso a solicitar información")
+
           .span7
             label Mensaje
+<<<<<<< HEAD
+            textarea(name="message", id="message", class="input-xlarge span7", rows="10")
+          button(type="submit", class="btn btn-primary pull-right") Enviar
+=======
             textarea.input-xlarge.span7#message(name="message", rows="10")
           button(type="submit", class="btn btn-primary pull-right") Send
+>>>>>>> 3aca61e6488dc4027960fa7ee9d0689a21e3d01f
 
 block custom-scripts
   //for development. We use local scripts
