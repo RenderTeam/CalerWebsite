@@ -78,3 +78,7 @@ exports.capacitacionesISO17025 = function(req, res){
 exports.capacitacionesISO15189 = function(req, res){
   res.render('capacitaciones/ISO15189', {title: 'Caler'});
 };
+
+exports.inscripcion = function(req, res){
+  res.render('capacitaciones/inscripcion', {title: 'Caler'});
+};

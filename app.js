@@ -46,6 +46,7 @@ app.get('/cursos/ISO17025', routes.cursosISO17025);
 app.get('/cursos/ISO15189', routes.cursosISO15189);
 app.get('/capacitaciones/ISO17025', routes.capacitacionesISO17025);
 app.get('/capacitaciones/ISO15189', routes.capacitacionesISO15189);
+app.get('/capacitaciones/inscripcion', routes.inscripcion);
 
 
 http.createServer(app).listen(app.get('port'), function(){
