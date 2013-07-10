@@ -51,14 +51,30 @@ exports.calendario = function(req, res){
   res.render('calendario', { title: 'Caler' });
 };
 
-exports.ISO17025 = function(req, res){
+exports.asesoriasISO17025 = function(req, res){
   res.render('asesorias/ISO17025', {title: 'Caler'});
 };
 
-exports.ISO15189 = function(req, res){
+exports.asesoriasISO15189 = function(req, res){
   res.render('asesorias/ISO15189', {title: 'Caler'});
 };
 
-exports.ISO9001 = function(req, res){
+exports.asesoriasISO9001 = function(req, res){
   res.render('asesorias/ISO9001', {title: 'Caler'});
+};
+
+exports.cursosISO17025 = function(req, res){
+  res.render('cursos/ISO17025', {title: 'Caler'});
+};
+
+exports.cursosISO15189 = function(req, res){
+  res.render('cursos/ISO15189', {title: 'Caler'});
+};
+
+exports.capacitacionesISO17025 = function(req, res){
+  res.render('capacitaciones/ISO17025', {title: 'Caler'});
+};
+
+exports.capacitacionesISO15189 = function(req, res){
+  res.render('capacitaciones/ISO15189', {title: 'Caler'});
 };
