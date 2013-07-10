@@ -14,7 +14,7 @@ block content
       .span4
         hr
       .span4
-        h2
+        h3
           img(src='/images/iconoCaler.png', alt="Logo").pull-left
           span Capacitaciones
           img(src='/images/iconoCaler.png', alt="Logo").pull-right
@@ -30,9 +30,8 @@ block content
               | date:
               span#selecteddate
                 
-      - var july = [{month: 'july', name: 'Formación de auditores internos', description: 'Formación de auditores internos, bajo la norma ISO 19011:2011 con enfoque en las normas ISO 15189:2007 e ISO/IEC 17025:2005.', summary: '#', date: '16 y 17'},{ name: 'Interpretación  de la norma NMX-EC-17025-IMNC-2006 / ISO 17025:2005', description: 'Interpretación  de la norma NMX-EC-17025-IMNC-2006 / ISO 17025:2005 para laboratorios de ensayo y calibración.', summary: '#', date: '18 y 19'},{ name: 'Validación de métodos y control de calidad', description: 'Validación de métodos y control de calidad para laboratorios de calibración y laboratorios de ensayo de pruebas mecánicas y físicas.', summary: '#', date: '23 y 24'}];
-      - var august = [{month: 'august', name: '', description: '', summary: '#', date: ''}];
-      
-      each course in july
+      - var courses = [{ name: 'Formación de auditores internos', description: 'Formación de auditores internos, bajo la norma ISO 19011:2011 con enfoque en las normas ISO 15189:2007 e ISO/IEC 17025:2005' },{ name: 'Formación de auditores internos', description: 'Formación de auditores internos, bajo la norma ISO 19011:2011 con enfoque en las normas ISO 15189:2007 e ISO/IEC 17025:2005' },{ name: 'Formación de auditores internos', description: 'Formación de auditores internos, bajo la norma ISO 19011:2011 con enfoque en las normas ISO 15189:2007 e ISO/IEC 17025:2005' },{ name: 'Formación de auditores internos', description: 'Formación de auditores internos, bajo la norma ISO 19011:2011 con enfoque en las normas ISO 15189:2007 e ISO/IEC 17025:2005' },{ name: 'Formación de auditores internos', description: 'Formación de auditores internos, bajo la norma ISO 19011:2011 con enfoque en las normas ISO 15189:2007 e ISO/IEC 17025:2005' }];
+
+      each course in courses
         .course
           include course-card

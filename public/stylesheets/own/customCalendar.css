@@ -15,14 +15,13 @@
   border: 1px solid #E3E3E3;
   border-radius: 5px;
   margin: 0;
-  min-height: 275px;
   padding: 20px;
 }
 .container .columns-container .course-card {
   background-color: white;
   border-radius: 15px 0px 0px 15px;
   margin-left: 0;
-  margin-bottom: 35px;
+  margin-top: 10px;
   padding: 15px 15px;
   text-align: left;
 }
@@ -32,10 +31,6 @@
 .container .columns-container .course-card .span2 {
   margin-left: 0;
   text-align: right;
-}
-.container .columns-container .course-card .span2 h4 {
-  color: #832F02;
-  text-align: center;
 }
 .container .columns-container .span4 {
   margin-left: 0;
