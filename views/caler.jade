@@ -1,1 +1,58 @@
 extends bootkitten
+
+block custom-stylesheets
+  link(rel='stylesheet', href='stylesheets/own/calerax.css',
+       media='screen')
+
+block content
+  .menu
+    .container.clearfix
+      .grid_4#caler
+        img(src='images/calerNav.png')
+       
+      .grid_6#nav
+        ul.navigation
+          li(data-slide='1') #{data_slide_1}
+          li(data-slide='2') #{data_slide_2}
+          li(data-slide='3') #{data_slide_3}
+          li(data-slide='4') #{data_slide_4}
+        hr.clearer
+        sup
+          sup ┌
+        |SU SOLUCIÓN EN
+        br
+        | &nbsp;&nbsp;SISTEMAS DE GESTIÓN
+        sub
+          sub ┘ 
+  .slide#slide1(data-slide='1', data-stellar-background-ratio='0.5')
+    .container.clearfix
+      .content.grid_7
+        h1 #{data_slide_1}
+        h2 #{firstPunchline}
+        p  #{firstDescription}
+        p  #{firstExtendedDescription}
+        p
+          a(href='https://twitter.com/Jalxob', target='_blank')
+            img(src='images/twitter.png')
+          a(href='http://dribbble.com/jalxob', target='_blank')
+            img(src='images/dribbble.png')
+  .slide#slide2(data-slide='2', data-stellar-background-ratio='0.5')
+    .container.clearfix
+      .grid_12#content
+        h1 #{data_slide_2}
+        h2 #{secondPunchline}
+  .slide#slide3(data-slide='3', data-stellar-background-ratio='0.5')
+    .container.clearfix
+      .content#grid_12
+        h1 #{data_slide_3}
+        h2 #{thirdPunchline}
+
+        .grid_12#test 
+          &nbsp; 12  
+  .slide#slide4(data-slide='4', data-stellar-background-ratio='0.5')
+    .container.clearfix
+      .content#grid_12
+        h1 #{data_slide_3}
+        h2 #{thirdPunchline}
+        .grid_12#test 
+          &nbsp; 12
