@@ -15,10 +15,10 @@ exports.caler = function(req, res){
   res.render('caler', 
     { 
       title: 'Caler',
-      data_slide_1: 'top slide',
+      data_slide_1: 'YOLO',
       data_slide_2: 'parallax',
-      data_slide_3: 'grid',
-      data_slide_4: 'credits',
+      data_slide_3: 'SWAG',
+      data_slide_4: 'YOLOSWAG',
       firstDescription : 'descripción de el stuff',
       firstExtendedDescription: 'extensión de la descripción',
       firstPunchline   : 'esta es un punchline',
