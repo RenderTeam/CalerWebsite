@@ -2,6 +2,9 @@ extends layout
 
 block content
 
+  - var norm
+  - var service
+
   .container.text-center
     .span12.service-titles.service-menu.hidden-phone
       .span4
@@ -42,16 +45,8 @@ block content
 
     .span1.breaker#Cursos
 
-    .span12.service-titles
-      .span4
-        hr
-      .span4
-        h2
-          img(src='/images/iconoCaler.png', alt="Logo").pull-left
-          span Cursos
-          img(src='/images/iconoCaler.png', alt="Logo").pull-right
-      .span4
-        hr
+    service = {title: 'Cursos'}
+    include service-titles
 
     .span12.text-left.service-text-container
       br
@@ -61,49 +56,26 @@ block content
       br
       article *Redactar informacion especifica de como funcionan los cursos*
       br
+
+    norm = {flag:'0',link17025: 'cursos/ISO17025',link15189: 'cursos/ISO15189'}
     include service-description
 
     include back-to-top
 
     .span1.breaker#Asesorias
 
-    .span12.service-titles
-      .span4
-        hr
-      .span4
-        h2
-          img(src='/images/iconoCaler.png', alt="Logo").pull-left
-          span Asesorías
-          img(src='/images/iconoCaler.png', alt="Logo").pull-right
-      .span4
-        hr
+    service = {title: 'Asesorias'}
+    include service-titles
 
+    norm = {flag:'1',link17025: 'asesorias/ISO17025',link15189: 'asesorias/ISO15189',link9001: 'asesorias/ISO9001'}
     include service-description
-
-    .span5.pull-right.service-element-container
-      .service-element
-          h2 ISO 9001:2008
-        ul
-          li.service-feature Esta norma especifica los requerimientos para un sistema de gestión de calidad dentro de una organización.
-          li.service-feature Dicho sistema de gestión debe demostrar su capacidad y consistencia para proveer prodctos que interactúan directamente con el cliente cumpliendo requerimientos estatutarios y de regulación. 
-          li.service-feature Por otro lado propone elevar la satisfacción del cliente a través de la implementación efectiva del mismo, incluye procesos para el mejoramiento contínuo de éste y también asegurar la conformidad del cliente bajo requerimientos estatutarios y de regulación.
-          li.service-feature
-            a.btn.btn-primary.btn-block.btn-plan-select(href='/asesorias/ISO9001') Ver más
 
     include back-to-top
 
     .span1.breaker#Auditorias
 
-    .span12.service-titles
-      .span4
-        hr
-      .span4
-        h2
-          img(src='/images/iconoCaler.png', alt="Logo").pull-left
-          span Auditorías
-          img(src='/images/iconoCaler.png', alt="Logo").pull-right
-      .span4
-        hr
+    service = {title: 'Auditorías'}
+    include service-titles
 
     .span12.text-left.service-text-container
       br
@@ -114,9 +86,8 @@ block content
       article Auditorías internas (realizadas por externos) para laboratorios que ya cuentan con un sistema de gestión de la calidad implantado e incluso ya acreditado o certificado.
       br
 
+    norm = {flag:'0',link17025: 'auditorias/ISO17025',link15189: 'auditorias/ISO15189'}
     include service-description
-
-
 
 block custom-scripts
   //for development. We use local scripts

@@ -27,10 +27,15 @@
 }
 .container .columns-container .course-card .span6 {
   margin-left: 0;
+  padding: 0px 15px;
+}
+.container .columns-container .course-card .span6 .course-description {
+  font-size: 16px;
 }
 .container .columns-container .course-card .span2 {
+  color: #6D2F02;
   margin-left: 0;
-  text-align: right;
+  text-align: center;
 }
 .container .columns-container .span4 {
   margin-left: 0;

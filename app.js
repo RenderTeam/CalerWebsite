@@ -44,8 +44,8 @@ app.get('/asesorias/ISO15189', routes.asesoriasISO15189);
 app.get('/asesorias/ISO9001', routes.asesoriasISO9001);
 app.get('/cursos/ISO17025', routes.cursosISO17025);
 app.get('/cursos/ISO15189', routes.cursosISO15189);
-app.get('/capacitaciones/ISO17025', routes.capacitacionesISO17025);
-app.get('/capacitaciones/ISO15189', routes.capacitacionesISO15189);
+app.get('/auditorias/ISO17025', routes.auditoriasISO17025);
+app.get('/auditorias/ISO15189', routes.auditoriasISO15189);
 app.get('/capacitaciones/inscripcion', routes.inscripcion);
 
 
