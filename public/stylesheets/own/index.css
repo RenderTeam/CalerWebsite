@@ -81,6 +81,18 @@ footer .header {
   color: #ffffff;
   cursor: pointer;
 }
+.image-rotate img {
+  transition: transform 2s;
+  -webkit-transition: transform 2s;
+}
+.image-rotate img:hover {
+  color: orange;
+  transform: rotate(720deg);
+  -ms-transform: rotate(720deg);
+  /* IE 9 */
+
+  -webkit-transform: rotate(720deg);
+}
 .text-justify {
   text-align: justify;
 }
