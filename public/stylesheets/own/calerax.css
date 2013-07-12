@@ -1,6 +1,20 @@
 body {
   min-width: 200px;
 }
+.back a {
+  background-color: #f68f67;
+  border-radius: 0.5em 0.5em 0.5em 0.5em;
+  color: white;
+  font-size: 1.3em;
+  padding: 0.4em;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.back a:hover {
+  background-color: white;
+  color: #f68f67;
+  border: 0.1em solid #f68f67;
+}
 .clearer {
   clear: both;
 }
@@ -8,10 +22,13 @@ body {
   margin-left: 15px;
 }
 .menu {
-  box-shadow: 5px 5px 50px #888888;
+  box-shadow: 5px 5px 10px #888888;
+}
+.slogan {
+  color: #6D2F02;
 }
 .top-padded {
-  padding-top: 10px;
+  padding-top: 0.5em;
 }
 #caler {
   height: 40%;
@@ -20,6 +37,9 @@ body {
   padding-bottom: 0;
   text-align: center;
   width: 20%;
+}
+#nav {
+  margin-left: 20%;
 }
 /* Tablet */
 @media screen and (max-width: 1024px) {
