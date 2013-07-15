@@ -22,6 +22,7 @@ body {
   margin-left: 15px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .menu {
   box-shadow: 5px 5px 10px #888888;
 }
@@ -30,6 +31,8 @@ body {
 }
 =======
 >>>>>>> 9d1b2a4c2d107e73b04cba54aa9f2662e32ad4cd
+=======
+>>>>>>> dan
 .top-padded {
   padding-top: 0.5em;
 }
@@ -37,9 +40,12 @@ body {
   text-align: center;
   margin: 5% 0;
   width: 30%;
+<<<<<<< HEAD
 }
 #nav {
   margin-left: 20%;
+=======
+>>>>>>> dan
 }
 /* Tablet */
 @media screen and (max-width: 1024px) {
