@@ -21,22 +21,22 @@ body {
 .left-padded {
   margin-left: 15px;
 }
-<<<<<<< HEAD
 .menu {
   box-shadow: 5px 5px 10px #888888;
 }
 .slogan {
   color: #6D2F02;
 }
-=======
->>>>>>> 9d1b2a4c2d107e73b04cba54aa9f2662e32ad4cd
 .top-padded {
   padding-top: 0.5em;
 }
 #caler {
+  height: 40%;
+  margin-top: 5%;
+  margin-bottom: 0;
+  padding-bottom: 0;
   text-align: center;
-  margin: 5% 0;
-  width: 30%;
+  width: 20%;
 }
 #nav {
   margin-left: 20%;
