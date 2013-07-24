@@ -43,10 +43,17 @@ function scrollSmooth(){
     }, 800);
     return false;
   }else{
-    $('html, body').animate({
-        scrollTop: ($(id).offset().top -160)
-    }, 800);
-    return false;
+    if($(this).closest('.span12').hasClass('visible-phone')){
+      $('html, body').animate({
+          scrollTop: ($(id).offset().top + 50)
+      }, 800);
+      return false;
+    }else{
+      $('html, body').animate({
+          scrollTop: ($(id).offset().top -160)
+      }, 800);
+      return false;
+    }
   }
 }
 
