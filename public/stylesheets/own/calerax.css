@@ -21,24 +21,12 @@ body {
 .left-padded {
   margin-left: 15px;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> ba7ab96eb067e4852261522143c1d8723a65173b
 .menu {
   box-shadow: 5px 5px 10px #888888;
 }
 .slogan {
   color: #6D2F02;
 }
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 9d1b2a4c2d107e73b04cba54aa9f2662e32ad4cd
-=======
->>>>>>> dan
->>>>>>> ba7ab96eb067e4852261522143c1d8723a65173b
 .top-padded {
   padding-top: 0.5em;
 }
@@ -48,18 +36,10 @@ body {
   margin-bottom: 0;
   padding-bottom: 0;
   text-align: center;
-<<<<<<< HEAD
   width: 20%;
-=======
-  margin: 5% 0;
-  width: 30%;
-<<<<<<< HEAD
->>>>>>> ba7ab96eb067e4852261522143c1d8723a65173b
 }
 #nav {
   margin-left: 20%;
-=======
->>>>>>> dan
 }
 /* Tablet */
 @media screen and (max-width: 1024px) {
