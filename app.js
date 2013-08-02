@@ -35,7 +35,6 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/caler', routes.caler);
 app.get('/capacitaciones', routes.capacitaciones);
-app.get('/calendario', routes.calendario);
 app.get('/contacto', routes.contacto);
 app.get('/servicios', routes.servicios);
 app.get('/users', user.list);

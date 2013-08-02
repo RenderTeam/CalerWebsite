@@ -1,107 +1,61 @@
 extends layout
 
-block custom-scripts
-  script(src='http://yui.yahooapis.com/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js')
-  script(src='http://yui.yahooapis.com/2.9.0/build/calendar/calendar-min.js')
+block custom-scripts  
   script(src='javascripts/own/calendar.js')
 block custom-stylesheets
-  link(href='/stylesheets/own/customCalendar.css', rel='stylesheet')
   link(href='/stylesheets/own/shame.css', rel='stylesheet')
-  //pendiente porque mata los marcadores en las fechas. :(
+  link(href='/stylesheets/own/calendar.css', rel='stylesheet')
+  link(href='/stylesheets/own/customCalendar.css', rel='stylesheet')
 
 block content
-  #main-content
-    .container     
-      .container.centered-text
-        .span12.service-titles
-          .span4
-            hr
-          .span4
-            h3
-              img(src='/images/iconoCaler.png', alt="Logo").pull-left
-              span Capacitaciones
-              img(src='/images/iconoCaler.png', alt="Logo").pull-right
-          .span4
-            hr
-      .container
-        .span12.row-fluid
-          .span8.well
-            .span12.row-fluid
-              .span12.n-card.white
-                .span8
-                  .span12
-                    h3.title.left-padded curso #1
-                    h4.content.left-padded contenido del curso #1 lol yolo swag 
-                    h4.content.left-padded
-                      span#selecteddate
-                .span4.vertical-centered
-                  .span12.row-fluid
-                    .span6.vertical-centered
-                      a.btn.btn-primary(href='#') ¡Inscribirme!
-                    .span6.vertical-centered
-                      a.btn.btn-info.btn-primary(href='#') Leer más...
-          // The calendar MUST be here, so its position will be binded to the
-          // first element on left column.            
-          .span4.yui-skin-sam
-            .span12.the-calendar
-              #myCalendar
-        .span12.row-fluid
-          .span8.well
-            .span12.row-fluid
-              .span12.n-card.white
-                .span8
-                  .span12
-                    h3.title.left-padded curso #2
-                    h4.content.left-padded contenido del curso #2 lol yolo swag 
-                .span4.vertical-centered
-                  .span12.row-fluid
-                    .span6.vertical-centered
-                      a.btn.btn-primary(href='#') ¡Inscribirme!
-                    .span6.vertical-centered
-                      a.btn.btn-info.btn-primary(href='#') Leer más...
-        .span12.row-fluid
-          .span8.well
-            .span12.row-fluid
-              .span12.n-card.white
-                .span8
-                  .span12
-                    h3.title.left-padded curso #3
-                    h4.content.left-padded contenido del curso #3 lol yolo swag 
-                .span4.vertical-centered
-                  .span12.row-fluid
-                    .span6.vertical-centered
-                      a.btn.btn-primary(href='#') ¡Inscribirme!
-                    .span6.vertical-centered
-                      a.btn.btn-info.btn-primary(href='#') Leer más...
-        .span12.row-fluid
-          .span8.well
-            .span12.row-fluid
-              .span12.n-card.white
-                .span8
-                  .span12
-                    h3.title.left-padded curso #4
-                    h4.content.left-padded contenido del curso #4 lol yolo swag 
-                .span4.vertical-centered
-                  .span12.row-fluid
-                    .span6.vertical-centered
-                      a.btn.btn-primary(href='#') ¡Inscribirme!
-                    .span6.vertical-centered
-                      a.btn.btn-info.btn-primary(href='#') Leer más...   
-        .span12.row-fluid
-          .span8.well
-            .span12.row-fluid
-              .span12.n-card.white
-                .span8
-                  .span12
-                    h3.title.left-padded curso #5
-                    h4.content.left-padded contenido del curso #5 lol yolo swag 
-                .span4.vertical-centered
-                  .span12.row-fluid
-                    .span6.vertical-centered
-                      a.btn.btn-primary(href='#') ¡Inscribirme!
-                    .span6.vertical-centered
-                      a.btn.btn-info.btn-primary(href='#') Leer más...                
     
-          
+  .container.text-center
+    .span12.service-titles
+      .span4
+        hr
+      .span4
+        h3
+          img(src='/images/iconoCaler.png', alt="Logo",height="35", width="35").pull-left
+          span Capacitaciones
+          img(src='/images/iconoCaler.png', alt="Logo",height="35", width="35").pull-right
+      .span4
+        hr
 
+    .span12.columns-container
+      .span4.calendarWrapper.pull-right
+        include calendar
+      - var month = {value: 'julio'};   
+      - var courses = [{month: month.value, date:'16 y 17',description:'Formación de auditores internos, bajo la norma ISO 19011:2011 con enfoque en las normas ISO 15189:2007 e ISO/IEC 17025:2005',name: 'Formación de auditores internos',summary:'#'},{month: month.value, date:'18 y 19',description:'Interpretación  de la norma NMX-EC-17025-IMNC-2006 / ISO 17025:2005 para laboratorios de ensayo y calibración.',name: 'Interpretación  de la norma NMX-EC-17025-IMNC-2006 / ISO 17025:2005',summary:'#'}]; 
+      
+      each course in courses
+        include course-card
 
+      - var month = {value: 'agosto'};   
+      - var courses = [{ month: month.value, date:'21 y 22',description:'Validación de métodos y control de calidad para laboratorios de calibración y laboratorios de ensayo de pruebas mecánicas y físicas',name: 'Validación de métodos y control de calidad',summary:'#'},{ month: month.value,date:'23 y 24',description:'Estimación de la Incertidumbre de la medición en ensayos, orientado a métodos analíticos',name: 'Estimacíón de la incertidumbre',summary:'#'},{ month: month.value,date:'28 y 29',description:'Taller para el tratamiento de No conformidades, Acciones correctivas y acciones preventivas',name: 'Taller de No conformidades',summary:'#'}]; 
+
+      each course in courses
+        include course-card
+
+      - var month = {value: 'septiembre'};   
+      - var courses = [{month: month.value,date:'4 y 5',description:'Calibración de instrumentos para pesar de funcionamiento no automático de acuerdo a la guía SIM',name: 'Calibración de instrumentos',summary:'#'},{month: month.value, date:'18 y 19',description:'Curso para la elaboración de manuales y documentos de  sistemas de gestión de la calidad con base en las normas ESO 9001, ISO 15189, ISO 17025',name: 'Elaboración de manuales y documentos',summary:'#'},{month: month.value, date:'20 y 21',description:'Inducción a la norma ISO 9001:2008 “Requisitos para un sistema de gestión de la calidad en una organización”',name: 'Inducción a la norma ISO 9001:2008',summary:'#'},{month: month.value, date:'25 y 26',description:'Formación de auditores internos, bajo la norma ISO 19011:2011 con enfoque en las normas ISO 15189:2007 e ISO/IEC 17025:2005',name: 'Formación de auditores internos',summary:'#'}]; 
+
+      each course in courses
+        include course-card
+
+      - var month = {value: 'octubre'};   
+      - var courses = [{month: month.value,date:'4 y 5',description:'Validación de métodos y control de calidad orientado a métodos químicos analíticos',name: 'Validación de métodos y control de calidad',summary:'#'},{month: month.value,date:'16 y 17',description:'Sistemas de gestión de la calidad en bancos de sangre, tomando como base la Norma Oficial Mexicana NOM-253-SSA1-2012',name: 'Sistemas de gestión de la calidad en bancos de sangre',summary:'#'},{month: month.value,date:'23 y 24',description:'Interpretación  de la norma NMX-EC-15189-IMNC-2008 / ISO 15189:2012 para laboratorios clínicos y bancos de sangre',name: 'Interpretación  de la norma NMX-EC-15189-IMNC-2008 / ISO 15189:2012',summary:'#'}]; 
+
+      each course in courses
+        include course-card
+
+      - var month = {value: 'noviembre'};   
+      - var courses = [{month: month.value,date:'6 y 7',description:'Curso de metrología básica',name: 'Curso de metrología básica',summary:'#'},{month: month.value,date:'13 y 14',description:'Sistemas de gestión ambiental ISO 14001',name: 'Sistemas de gestión ambiental ISO 14001',summary:'#'},{month: month.value,date:'20 y 21',description:'Interpretación  de la norma NMX-EC-17025-IMNC-2006 / ISO 17025:2005 para laboratorios de ensayo y calibración',name: 'Interpretación  de la norma NMX-EC-17025-IMNC-2006 / ISO 17025:2005',summary:'#'}]; 
+
+      each course in courses
+        include course-card
+
+      - var month = {value: 'diciembre'};   
+      - var courses = [{month: month.value,date:'3 y 4',description:'Taller para el tratamiento de No conformidades, Acciones correctivas y acciones preventivas',name: 'Taller para el tratamiento de No conformidades',summary:'#'},{month: month.value,date:'5 y 6',description:'Formación de auditores internos, bajo la norma ISO 19011:2011 con enfoque en las normas ISO 15189:2007 e ISO/IEC 17025:2005',name: 'Formación de auditores internos',summary:'#'}]; 
+
+      each course in courses
+        include course-card

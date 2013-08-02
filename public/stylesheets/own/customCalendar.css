@@ -15,14 +15,18 @@
   border: 1px solid #E3E3E3;
   border-radius: 5px;
   margin: 0;
+  min-height: 580px;
   padding: 20px;
 }
+.container .columns-container .calendarContainer {
+  position: fixed;
+}
 .container .columns-container .course-card {
-  background-color: white;
   border-radius: 15px 0px 0px 15px;
   margin-left: 0;
   margin-top: 10px;
-  padding: 15px 15px;
+  padding: 15px 5px;
+  padding-left: 0;
   text-align: left;
 }
 .container .columns-container .course-card .span6 {
@@ -47,84 +51,52 @@
 .vertical-centered {
   padding-top: 1em;
 }
-.white {
-  background-color: white;
-}
 .white .title {
   color: #FF8C35;
 }
-/** Course days **/
-.y2013 .m7 .d22 {
-  background-color: green;
+.day-preview-header-courseday {
+  -webkit-box-shadow: inset 1px 1px 10px 1px #EC6C08, 1px 1px 10px 1px #EC6C08;
+  box-shadow: inset 1px 1px 10px 1px #EC6C08, 1px 1px 10px 1px #EC6C08;
 }
-/** Custom calendar from YUI **/
-/*
-Copyright (c) 2011, Yahoo! Inc. All rights reserved.
-Code licensed under the BSD License:
-http://developer.yahoo.com/yui/license.html
-version: 2.9.0
-*/
-a {
-  color: #0088cc;
-  text-decoration: none;
-}
-.yui-skin-sam .yui-calendar .calnavright {
-  background: url(http://yui.yahooapis.com/2.9.0/build/assets/skins/sam/sprite.png) no-repeat 0 -500px;
-  width: 25px;
-  height: 15px;
-  top: 0;
-  bottom: 0;
-  right: -10px;
-  margin-right: .4em;
-  cursor: pointer;
-}
-.yui-calendar .calnavright {
-  position: absolute;
-  z-index: 1;
-  text-indent: -10000em;
-  overflow: hidden;
-}
-.yui-skin-sam .yui-calendar .calheader {
-  font-weight: bold;
-  text-align: center;
-}
-.yui-skin-sam .yui-calendar {
-  border-spacing: 0;
-  border-collapse: collapse;
-  font: 100% sans-serif;
-  text-align: center;
-}
-table {
-  border-collapse: separate;
-  border-spacing: 2px;
-  border-color: gray;
-}
-table {
-  border-spacing: 2px;
-  border-color: gray;
-}
-.yui-skin-sam .yui-calendar {
-  border-spacing: 0;
-  border-collapse: collapse;
-  font: 100% sans-serif;
-}
-.yui-skin-sam .yui-calendar .calheader {
-  font-weight: bold;
-  text-align: center;
-}
-.yui-calendar .calnavleft {
-  position: absolute;
-  z-index: 1;
-  text-indent: -10000em;
-  overflow: hidden;
-}
-.yui-skin-sam .yui-calendar .calnavleft {
-  background: url(http://yui.yahooapis.com/2.9.0/build/assets/skins/sam/sprite.png) no-repeat 0 -450px;
-  width: 25px;
-  height: 15px;
-  top: 0;
-  bottom: 0;
-  left: -10px;
-  margin-left: .4em;
-  cursor: pointer;
+/*Course dates*/
+/*Julio*/
+.d16-m7-y2013,
+.d17-m7-y2013,
+.d18-m7-y2013,
+.d19-m7-y2013,
+.d21-m8-y2013,
+.d22-m8-y2013,
+.d23-m8-y2013,
+.d24-m8-y2013,
+.d28-m8-y2013,
+.d29-m8-y2013,
+.d4-m9-y2013,
+.d5-m9-y2013,
+.d18-m9-y2013,
+.d19-m9-y2013,
+.d20-m9-y2013,
+.d21-m9-y2013,
+.d25-m9-y2013,
+.d26-m9-y2013,
+.d4-m10-y2013,
+.d5-m10-y2013,
+.d16-m10-y2013,
+.d17-m10-y2013,
+.d23-m10-y2013,
+.d24-m10-y2013,
+.d6-m11-y2013,
+.d7-m11-y2013,
+.d13-m11-y2013,
+.d14-m11-y2013,
+.d20-m11-y2013,
+.d21-m11-y2013,
+.d3-m12-y2013,
+.d4-m12-y2013,
+.d5-m12-y2013,
+.d6-m12-y2013 {
+  background-image: url(../../images/iconoCaler.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 40%;
+  color: #fff;
 }

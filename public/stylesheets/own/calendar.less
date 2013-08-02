@@ -1,41 +1,129 @@
-.blue-caler{
-  color:#2C77B8;
-}
+@dayPreviewBackgroundColor:           none;
+@dayPreviewHeaderBackgroundColor:     #EEEEEE;
+@dayPreviewDayFontColor:              #EC6C08;
+@dayPreviewMonthFontColor:            #2C77B8;
+@dayPreviewYearFontColor:             #6D2F02;
+@fullMonthBackground:                 #EEEEEE;
+@fullMonthHeaderBackground:           #EEEEEE;
+@fullMonthArrowBackroundColor:        none;
+@fullMonthDayHeaderBackgroundColor:   none;
+@fullMonthCellBackgroundColor:        #ffffff;
+@fullMonthArrowColor:                 #6D2F02;
+@fullMonthArrowHoverBackgroundColor:  none;
+@fullMonthArrowHoverColor:            none;
+@fullMonthMonthFontColor:             none;
+@fullMonthDayHeaderFontColor:         #EC6C08;
+@fullMonthDayNumberColor:             none;
+@fullMonthDayCellShadowColor:         #323034;
+@fullMonthSelectedCell:               orange;    
 
-.centered-text{
-  text-align: center;
-}
-
-.course-card{
-  margin-top: 1.2em;
-  margin-left: 0;
-}
-
-.left-padded{
-  margin-left: 2em;
-}
-
-.white{
-  background-color: white;
-  .title{
-    color:#FF8C35;
+.calendarContainer{
+  div{
+    margin: 0;
   }
-  .content{
 
+  .day-preview{
+    background-color: @dayPreviewBackgroundColor;
+    min-height: 260px;
+    
+    .day{
+      color: @dayPreviewDayFontColor;
+      
+      h1{
+        font-size: 10em;
+      }
+    }
+
+    .day-preview-header{
+      background-color: @dayPreviewHeaderBackgroundColor;
+      border-radius: 15px;
+
+      .month{
+        color: @dayPreviewMonthFontColor;
+      }
+
+      .year{
+        font-weight: normal;
+        color: @dayPreviewYearFontColor;
+      }
+    }
+  }
+
+  .full-month{
+    min-height: 260px;
+    background-color: @fullMonthBackground;
+
+    .full-month-header-container{
+      background-color: @fullMonthHeaderBackground;
+      color: @fullMonthMonthFontColor;
+
+      .arrow{
+        background-color: @fullMonthArrowBackroundColor;
+        color: @fullMonthArrowColor;
+      }
+
+      .arrow:hover{
+        background-color: @fullMonthArrowHoverBackgroundColor;
+        color: @fullMonthArrowHoverColor;
+        cursor: pointer;
+      }
+
+      .calendar-row-days{
+        background-color: @fullMonthDayHeaderBackgroundColor;
+        .cell-header{ 
+          color:  @fullMonthDayHeaderFontColor;
+          margin-bottom: 10px;   
+          float: left;
+          width: 14.28%;
+        }
+      }
+
+      .yearPreview{
+        font-weight: normal;
+        color: @dayPreviewYearFontColor;
+      }     
+    }
+
+    .calendar-cell{
+      background-color: @fullMonthCellBackgroundColor;
+      box-shadow:         0px 0px 8px @fullMonthDayCellShadowColor; 
+      -webkit-box-shadow: 0px 0px 8px @fullMonthDayCellShadowColor;
+      -moz-box-shadow:    0px 0px 8px @fullMonthDayCellShadowColor;
+      color: @fullMonthDayNumberColor;
+      float: left;
+      min-height: 30px;
+      padding-top: 3px;
+      width: 14.28%;        
+    }
+
+    .calendar-cell:hover{
+      cursor: pointer;
+    }
+
+    .notThisMonth{
+      opacity: .4;
+    }
+
+    .selectedCell{
+      color: @fullMonthSelectedCell;
+    }
+
+    .span2{
+      min-width: 230px;
+    }
   }
 }
 
-.vertical-centered{
-  padding-top: 1em;
+.breaker{
+  clear:both;
+  margin: 0;
+  max-height: 1px;
 }
 
-#demo{
-  position:fixed;
+.invisible{
+  opacity: 0;
 }
 
-#main-content{
-  padding-top:3%;
-  padding-bottom:3%;
-  width:100%;
+b{
+  color:orange;
 }
-
