@@ -54,6 +54,10 @@
 .white .title {
   color: #FF8C35;
 }
+.day-preview-header-courseday {
+  -webkit-box-shadow: inset 1px 1px 10px 1px #EC6C08, 1px 1px 10px 1px #EC6C08;
+  box-shadow: inset 1px 1px 10px 1px #EC6C08, 1px 1px 10px 1px #EC6C08;
+}
 /*Course dates*/
 /*Julio*/
 .d16-m7-y2013,
@@ -92,12 +96,7 @@
 .d6-m12-y2013 {
   background-image: url(../../images/iconoCaler.png);
   background-repeat: no-repeat;
-  background-position: top 80%;
-  background-size: 32%;
-  color: #822F02;
-}
-/*
   background-position: center center;
-  background-size: 50%;
+  background-size: 40%;
   color: #fff;
-*/
+}

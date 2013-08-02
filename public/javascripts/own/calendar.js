@@ -26,12 +26,14 @@ var calendarLabels = {
 
 function createMonth(month){
   //month is a Date object
-  var firstDayOfTheMonthNumber,
+  var activeCell,
+      firstDayOfTheMonthNumber,
+      fullMonthHeaderContainer,
       i, 
-      remainingCellsCounter = 0,
       monthNumber = month.getMonth(),
       monthSize,
       previousMonthSize,
+      remainingCellsCounter = 0,
       temporalDate,
       temporalPreviousMonth,
       temporalNextMonth,
@@ -51,15 +53,17 @@ function createMonth(month){
   previousMonthSize = getMonthSize(temporalPreviousMonth);
   firstDayOfTheMonthNumber = getDayofTheWeekOfFirstDayOfTheMonth(month);
 
-  $('.full-month-header-container').find('.span2').find('h2').text(monthNumberToMonthLabel(monthNumber));
-  $('.full-month-header-container').find('.yearPreview').text(month.getFullYear());
+  fullMonthHeaderContainer = $('.full-month-header-container');
 
-  $('.full-month-header-container').find('.arrow-left').attr({
+  fullMonthHeaderContainer.find('.span2').find('h2').text(monthNumberToMonthLabel(monthNumber));
+  fullMonthHeaderContainer.find('.yearPreview').text(month.getFullYear());
+
+  fullMonthHeaderContainer.find('.arrow-left').attr({
       'month': temporalPreviousMonth.getMonth(),
       'year': temporalPreviousMonth.getFullYear()
   });
 
-  $('.full-month-header-container').find('.arrow-right').attr({
+  fullMonthHeaderContainer.find('.arrow-right').attr({
       'month': temporalNextMonth.getMonth(),
       'year': temporalNextMonth.getFullYear()
   });
@@ -73,46 +77,52 @@ function createMonth(month){
   temporalDayNumber = previousMonthSize - firstDayOfTheMonthNumber + 1;
 
   for(i = previousMonthSize, loopTimes = previousMonthSize - firstDayOfTheMonthNumber; i > loopTimes; i--){
-    $('.activeCell').removeClass($('.activeCell').attr('date'));
-    $('.activeCell').addClass('notThisMonth');
-    $('.activeCell').addClass('previousMonth');    
+    activeCell = $('.activeCell');
+
+    activeCell.removeClass($('.activeCell').attr('date'));
+    activeCell.addClass('notThisMonth');
+    activeCell.addClass('previousMonth');    
     temporalDate = 'd'+temporalDayNumber + '-m' + (temporalPreviousMonth.getMonth() + 1) + '-y' +temporalPreviousMonth.getFullYear();
     
-    $('.activeCell').text(temporalDayNumber);
-    $('.activeCell').attr('date', temporalDate);
-    $('.activeCell').addClass(temporalDate);
-    $('.activeCell').next().addClass('activeCell');
+    activeCell.text(temporalDayNumber);
+    activeCell.attr('date', temporalDate);
+    activeCell.addClass(temporalDate);
+    activeCell.next().addClass('activeCell');
     $('.activeCell:first').removeClass('activeCell');
     temporalDayNumber++;
     remainingCellsCounter++;
   }
 
   for(i = 1;i <= monthSize;i++){
-    $('.activeCell').removeClass($('.activeCell').attr('date'));
-    $('.activeCell').addClass('thisMonth');
+    activeCell = $('.activeCell');
+
+    activeCell.removeClass($('.activeCell').attr('date'));
+    activeCell.addClass('thisMonth');
 
     temporalDate = 'd'+i + '-m' + (month.getMonth() + 1) + '-y' +month.getFullYear();
-    $('.activeCell').text(i);
-    $('.activeCell').attr('date', temporalDate);
-    $('.activeCell').addClass(temporalDate);
-    $('.activeCell').next().addClass('activeCell');
+    activeCell.text(i);
+    activeCell.attr('date', temporalDate);
+    activeCell.addClass(temporalDate);
+    activeCell.next().addClass('activeCell');
     $('.activeCell:first').removeClass('activeCell');
     remainingCellsCounter++;
   }
 
   for(i = 1, loopTimes = (42 - remainingCellsCounter);i <= loopTimes;i++){
-    $('.activeCell').removeClass($('.activeCell').attr('date'));
-    $('.activeCell').addClass('notThisMonth');
-    $('.activeCell').addClass('nextMonth');
+    activeCell = $('.activeCell');
+
+    activeCell.removeClass($('.activeCell').attr('date'));
+    activeCell.addClass('notThisMonth');
+    activeCell.addClass('nextMonth');
     temporalDate = 'd'+i + '-m' + (temporalNextMonth.getMonth() + 1) + '-y' +temporalNextMonth.getFullYear();
-    $('.activeCell').text(i);
-    $('.activeCell').attr('date', temporalDate);
-    $('.activeCell').addClass(temporalDate);
-    $('.activeCell').next().addClass('activeCell');
+    activeCell.text(i);
+    activeCell.attr('date', temporalDate);
+    activeCell.addClass(temporalDate);
+    activeCell.next().addClass('activeCell');
     $('.activeCell:first').removeClass('activeCell');
   }
 
-  $('.full-month-header-container').next().addClass('activeCell');
+  fullMonthHeaderContainer.next().addClass('activeCell');
 
   /*This only applies to caler Website*/
   changeVisibleCourses();

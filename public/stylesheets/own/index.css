@@ -24,6 +24,16 @@ footer {
   color: #fff;
   padding: 20px;
 }
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: orange;
+}
+footer .footer-column {
+  width: 50%;
+  margin: 0;
+}
 footer .header {
   color: orange;
   font-size: 1em;
