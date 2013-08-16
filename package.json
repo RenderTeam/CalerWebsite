@@ -1,25 +1,13 @@
 {
-  "author" : "Your-name <your.email@example.com",
-  "dependencies": {
-    "express": "3.1.1",
-    "jade": "*",
-    "less": "*",
-    "less-middleware": "*"
-  },
-  "description": "Your project description",
-  "engines": {
-    "node": ">=0.8",
-    "npm": "1.2.x"
-  },
-  "license": "GPL v3.0",
-  "name": "your-project-name",
+  "name": "application-name",
+  "version": "0.0.1",
   "private": true,
-  "repository" : {
-        "type": "git",
-        "url": "your-github-repository"
-    },
   "scripts": {
     "start": "node app.js"
   },
-  "version": "1.0.0"
+  "dependencies": {
+    "express": "3.2.0",
+    "jade": "*",
+    "less-middleware": "*"
+  }
 }
